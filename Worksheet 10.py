@@ -13,7 +13,8 @@ list1 = file1.read()
 for item in list1.split():
     listEnd.append(int(item))
 listEnd.sort()
-print('Range of 10: ', listEnd[-1] - listEnd[0])
+answer = listEnd[-1] - listEnd[0]
+print('Range of 10: ', answer)
 
 listEnd2 = []
 list2 = file2.read()
@@ -21,7 +22,8 @@ list2 = file2.read()
 for item in list2.split():
     listEnd2.append(int(item))
 listEnd2.sort()
-print('Range of 100: ', listEnd2[-1] - listEnd2[0])
+answer2 = listEnd2[-1] - listEnd2[0]
+print('Range of 100: ', answer2)
 
 print('\n')
 # The frequency is a count of how often each different number appears
@@ -79,7 +81,39 @@ print('Median of 10: ', medianOFListEnd)
 medianOFListEnd2 = statistics.median(listEnd2)
 print('Median of 100 : ', medianOFListEnd2)
 
-___________________________________________________________________________________________________________________________________________________________________
+file3 = open("C:/Users/17BDaly.acc/Downloads/worksheet10.txt", "w")
+file3.write('Range of 10 : ')
+file3.write(str(answer))
+file3.write('\n')
+file3.write('Range of 100 : ')
+file3.write(str(answer2))
+file3.write('\n')
+file3.write('Frequency of 10 : ')
+file3.write(str(frequency))
+file3.write('\n')
+file3.write('Frequency of 100 : ')
+file3.write(str(frequency2))
+file3.write('\n')
+file3.write('Mean of 10 : ')
+file3.write(str(meanlistEnd))
+file3.write('\n')
+file3.write('Mean of 100 : ')
+file3.write(str(meanlistEnd2))
+file3.write('\n')
+file3.write('Mode of 10 : ')
+file3.write(str(modeOFListEnd))
+file3.write('\n')
+file3.write('Mode of 100 : ')
+file3.write(str(modeOFListEnd2))
+file3.write('\n')
+file3.write('Median of 10 : ')
+file3.write(str(medianOFListEnd))
+file3.write('\n')
+file3.write('Median of 100 : ')
+file3.write(str(medianOFListEnd2))
+file3.close()
+'''
+___________________________________________________________________________________________________________________________________________________________________'''
 '''Example 1:
 1,2,3,4,5,6,7,8,9,10,11 – here 6 is the median because it is in the middle of all the numbers ordered
 from largest to smallest
